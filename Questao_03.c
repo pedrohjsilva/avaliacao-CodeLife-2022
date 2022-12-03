@@ -10,39 +10,36 @@
 int main ( )
     {
     //programa desenvolvido em linguagem C
-    //a função abaixo garante a correta exibição de caracteres do idioma brasileiro
+    //a funÃ§Ã£o abaixo garante a correta exibiÃ§Ã£o de caracteres do idioma brasileiro
     setlocale (LC_ALL,"");
     setlocale (LC_CTYPE,"pt_BR.UTF-8" );
 
 
-    //a função abaixo inicia o programa em tela cheia
+    //a funÃ§Ã£o abaixo inicia o programa em tela cheia
     keybd_event(VK_MENU, 0x36, 0, 0);
     keybd_event(VK_RETURN, 0x1C, 0, 0);
     keybd_event(VK_RETURN, 0x1C, KEYEVENTF_KEYUP, 0);
     keybd_event(VK_MENU, 0x38, KEYEVENTF_KEYUP, 0);
 
-    //variáveis que serão manipuladas pelo pprograma
+    //variÃ¡veis que serÃ£o manipuladas pelo pprograma
     int n, i;
 
 
     Sleep(3000);
-    printf("\n\n\n\tEste programa mostra os primeiros n múltiplos de 3.");
+    printf("\n\n\n\tEste programa mostra os primeiros n mÃºltiplos de 3.");
     Sleep(3000);
-    printf("\n\tn será um número escolhido por você.");
+    printf("\n\tn serÃ¡ um nÃºmero escolhido por vocÃª.");
     Sleep(3000);
-    printf("\n\tPara começar, informe um número inteiro.\n\n\t");
+    printf("\n\tPara comeÃ§ar, informe um nÃºmero inteiro.\n\n\t");
     scanf("%d", &n);
     system("cls");
     Sleep(300);
 
-    printf("\n\n\n\tVocê escolher ver on primeiros \"%d\" múltilos de 3.", n);
+    printf("\n\n\n\tVocÃª escolher ver on primeiros \"%d\" mÃºltilos de 3.", n);
     printf("\n\tSeguem:");
 
-    //laço de repetição que multiplica 3 até o número desejado e imprime os resultados
+    //laÃ§o de repetiÃ§Ã£o que multiplica 3 atÃ© o nÃºmero desejado e imprime os resultados
     for(i=1; i<=n; i++){
     printf("\n\t%d", 3*i);
     }
-
-
     }
-
