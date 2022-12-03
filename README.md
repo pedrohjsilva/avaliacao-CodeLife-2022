@@ -1,2 +1,7 @@
-# avaliacao-CodeLife-2022
-esse repositório tem as questões da avaliação de desenvolvimento web que fiz em novembro de 2022, quando me inscrevi no processo seletivo pra fazer parte do projeto Code School Brazil
+# Avaliação para o processo seletivo do projeto Code School Brazil
+**esse repositório tem as questões da avaliação de desenvolvimento web que fiz em novembro de 2022, quando me inscrevi no processo seletivo pra fazer parte do projeto Code School Brazil<br/>**
+<br/>a *questão 1* é um programa feito em linguagem C. foi pedido que eu escrevesse um programa, em qualquer linguagem de programação, que lesse um número n informado pelo usuário e informasse se ele é par ou ímpar e positivo ou negativo.<br/>
+<br/>a *questão 2* é um programa, também escrito em C. foi pedido que eu escrevesse um programa, em qualquer linguagem, que lesse três números x, y e z. em seguida, o programa deveria informar o maior, o menor e a média desses três números.<br/>
+<br/>a *questão 3* é um programa, também escrito em C. foi pedido que eu escrevesse um programa, em qualquer linguagem, que informasse todos os n primeiros múltiplos de 3. n deveria ser informado pelo usuário.<br/>
+<br/>a *questão 4* é um programa, também escrito em C. foi pedido que eu escrevesse um programa, em qualquer linguagem, que permitisse ao usuário preencher uma matriz de ordem 4x5. em seguida, o programa deveria exibir a matriz digitada.<br/>
+<br/>a *questão 5* é um programa escrito em Java. a linguagem foi imposta, assim como o que o programa deveria realizar: o usuário deve informar um valor. meu programa deveria informar todos os números pares menores que o número que o usuário escolhesse.<br/>
