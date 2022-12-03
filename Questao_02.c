@@ -10,68 +10,67 @@
 int main ( )
     {
     //programa desenvolvido em linguagem C
-    //a função abaixo garante a correta exibição de caracteres do idioma brasileiro
+    //a funÃ§Ã£o abaixo garante a correta exibiÃ§Ã£o de caracteres do idioma brasileiro
 
     setlocale (LC_ALL,"");
     setlocale (LC_CTYPE,"pt_BR.UTF-8" );
 
-    //a função abaixo inicia o programa em tela cheia
+    //a funÃ§Ã£o abaixo inicia o programa em tela cheia
     keybd_event(VK_MENU, 0x36, 0, 0);
     keybd_event(VK_RETURN, 0x1C, 0, 0);
     keybd_event(VK_RETURN, 0x1C, KEYEVENTF_KEYUP, 0);
     keybd_event(VK_MENU, 0x38, KEYEVENTF_KEYUP, 0);
 
-    //variáveis que serão manipuladas pelo programa
+    //variÃ¡veis que serÃ£o manipuladas pelo programa
     int n1, n2, n3;
 
-    //aqui  ocorre a exibição de instruções ao usuário, seguida da leitura dos valores pretendidos
+    //aqui  ocorre a exibiÃ§Ã£o de instruÃ§Ãµes ao usuÃ¡rio, seguida da leitura dos valores pretendidos
 
     Sleep(3000);
-    printf("\n\n\n\tEste programa lerá três números que você escolher.");
+    printf("\n\n\n\tEste programa lerÃ¡ trÃªs nÃºmeros que vocÃª escolher.");
     Sleep(3000);
-    printf("\n\tFeito isso, ele informa o maior, o menor e a mediana desses três números.");
+    printf("\n\tFeito isso, ele informa o maior, o menor e a mediana desses trÃªs nÃºmeros.");
     Sleep(3000);
-    printf("\n\tPara começar, informe um número inteiro.\n\n\t");
+    printf("\n\tPara comeÃ§ar, informe um nÃºmero inteiro.\n\n\t");
     scanf("%d", &n1);
-    printf("\n\tAgora, informe o segundo número inteiro.\n\n\t");
+    printf("\n\tAgora, informe o segundo nÃºmero inteiro.\n\n\t");
     scanf("%d", &n2);
-    printf("\n\tPor fim, informe o último número inteiro.\n\n\t");
+    printf("\n\tPor fim, informe o Ãºltimo nÃºmero inteiro.\n\n\t");
     scanf("%d", &n3);
     system("cls");
     Sleep(300);
 
-    printf("\n\n\n\tVocê digitou os números \"%d\", \"%d\" e \"%d\"", n1, n2, n3);
+    printf("\n\n\n\tVocÃª digitou os nÃºmeros \"%d\", \"%d\" e \"%d\"", n1, n2, n3);
 
-    //aqui são testados onde cada número se "encaixa" em relação aos outros
+    //aqui sÃ£o testados onde cada nÃºmero se "encaixa" em relaÃ§Ã£o aos outros
     if(n1> n2 && n1>n3){
-    printf("\n\tO maior número que você digitou é: %d", n1);
+    printf("\n\tO maior nÃºmero que vocÃª digitou Ã©: %d", n1);
     } else
     if(n2>n1 && n2>n3){
-    printf("\n\tO maior número que você digitou é: %d", n2);
+    printf("\n\tO maior nÃºmero que vocÃª digitou Ã©: %d", n2);
     } else {
-    printf("\n\tO maior número que você digitoou é: %d", n3);
+    printf("\n\tO maior nÃºmero que vocÃª digitoou Ã©: %d", n3);
     }
 
     if(n1<n2 && n1<n3){
-    printf("\n\tO menor número que você digitou é: %d", n1);
+    printf("\n\tO menor nÃºmero que vocÃª digitou Ã©: %d", n1);
     } else
     if(n2<n1 && n2<n3){
-    printf("\n\tO menor número que você digitou é: %d", n2);
+    printf("\n\tO menor nÃºmero que vocÃª digitou Ã©: %d", n2);
     } else {
-    printf("\n\tO menor número que você digitoou é: %d", n3);
+    printf("\n\tO menor nÃºmero que vocÃª digitoou Ã©: %d", n3);
     }
 
     if(n1<n2<n3 || n1>n2>n3){
-    printf("\n\tO número do meio é: %d", n2);
+    printf("\n\tO nÃºmero do meio Ã©: %d", n2);
     } else
     if(n2<n1<n3 || n2>n1>n3){
-    printf("\n\tO número do meio é: %d", n1);
+    printf("\n\tO nÃºmero do meio Ã©: %d", n1);
     } else {
-    printf("\n\tO número do meio é: %d", n3);
+    printf("\n\tO nÃºmero do meio Ã©: %d", n3);
     }
 
-    //aqui eu fefini um ponto flutuante para calcular a média dos números informados, respeitando a conversão implícita
+    //aqui eu fefini um ponto flutuante para calcular a mÃ©dia dos nÃºmeros informados, respeitando a conversÃ£o implÃ­cita
     float media = (n1+n2+n3)/3.0;
-    printf("\n\tA média aritmética desses três números é: %f", media);
+    printf("\n\tA mÃ©dia aritmÃ©tica desses trÃªs nÃºmeros Ã©: %f", media);
     }
-
