@@ -16,12 +16,12 @@ int main ( )
     keybd_event(VK_RETURN, 0x1C, 0, 0);
     keybd_event(VK_RETURN, 0x1C, KEYEVENTF_KEYUP, 0);
     keybd_event(VK_MENU, 0x38, KEYEVENTF_KEYUP, 0);
-
-    //a variavel declarada abaixo � o que nosso programa manipular�
+    
+    //a variavel declarada abaixo é o que nosso programa manipulará
     int n;
 
     Sleep(3000);
-    printf("\n\n\n\tEste programa ler� um n�mero que voc� escolher e te dir� se ele � positivo ou negativo.");
+    printf("\n\n\n\tEste programa lerá um número que você escolher e te dirá se ele é positivo ou negativo.");
     Sleep(3000);
     printf("\n\tAl�m disso, ele informa se esse n�mero � par ou �mpar.");
     Sleep(3000);
@@ -59,4 +59,4 @@ int main ( )
     }
 
     //adicionei testes para caso o n�mero inteiro fornecido seja zero, j� que ele n�o �  par, nem �mpar e nem positivo ou negativo.
-    }
+}
